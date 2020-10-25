@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Getting help with R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ella Kaye" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+    <script src="libs/anchor-sections/anchor-sections.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Getting help with R
+## R Ladies Coventry
+### Ella Kaye
+### October 29th, 2020
+
+---
+
+
+
+
+
+
+
+
+
+# Overview
+
+### Looking for answers
+- in R
+- online
+
+### Asking questions
+- Typology of questions
+- Reproducible examples and `reprex` package
+- Where to ask
+  
+### Further resources
+
+---
+
+class: center, middle, inverse
+
+# LOOKING FOR ANSWERS
+
+---
+
+class: center, middle, inverse
+
+# In R
+
+---
+
+# Within R - Help with functions
+
+
+```r
+# help with a specific function
+help(function_name)
+?function_name
+
+# quick reminder of the function arguments
+arg(function_name)
+
+# see an example
+example(function_name)
+```
+
+---
+# Within R - `help.search`
+
+
+```r
+# when ?function_name fails (e.g. don't have library loaded)
+help.search("function_name") # note quotation marks
+??function_name
+
+# for when you can't quite remember the function name
+??something_like_function_name
+
+# use auto-completion in RStudio to see what functions 
+# are in a package
+?package::
+```
+
+---
+
+# Within R - Help with package
+
+
+```r
+# `help`
+help(package = "package_name")
+# Help panel in RStudio will give links to all documentation
+# and help pages for that package
+
+# find/browse vignettes for installed (or specific) packages
+browseVignettes()
+browseVignettes("package_name")
+
+```
+
+---
+
+class: center, middle, inverse
+
+# Online
+
+---
+
+
+background-image: url(images/google-help-tweet.png)
+background-size: contain
+
+---
+
+class: center, bottom
+background-image: url(images/rseek-tidy.png)
+background-size: contain
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png)
+background-size: contain
+
+
+---
+
+background-image: url(images/SO-example.png)
+background-size: contain
+
+---
+# Searching online
+
+- In Google, include "r" and package name in your search
+
+- Use [rseek.org](https://rseek.org) to search R documentation, discussion forums, blogs
+
+- Can also try [symbolhound.com](http://symbolhound.com/) if search term contains symbols
+
+- [Ecosia](https://www.ecosia.org) for ethical search
+
+- If trying to get help with an error, include the entire error message
+
+- Use tags in [StackOverflow](https://stackoverflow.com)
+
+    - rotate x axis labels [ggplot2] [r]
+
+---
+
+background-image: url(https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)
+background-size: contain
+
+
+
+---
+
+# Digging deeper
+
+- Issues on GitHub page
+
+  - Check if it's a known problem awaiting a fix
+  - commenting means you'll be notified of a fix
+  
+- Source code
+  
+  - Search for the package on GitHub
+  - Download package source from CRAN (.tar.gz file)
+  - `function_name`
+  - Can you identify exactly what's causing the problem?
+
+---
+
+class: inverse, center, middle
+
+## Always have a really good stab at finding an answer before asking a question
+
+---
+
+
+class: inverse, center, middle
+
+# ASKING QUESTIONS
+
+---
+
+class: inverse, center, middle
+
+# Typology of questions
+
+
+---
+
+## Typology of questions
+
+From [this](https://masalmon.eu/2018/07/22/wheretogethelp/) excellent blog, 'Where to get with your R questions' by Maëlle Salmon.
+
+
+- **Problem**
+
+  - Is this a bug? Why is this code not working? How can I successfully install the `rJava` package?
+
+- **Question**
+
+  - Is there a tool in R for doing foo? How do I learn about `bar`?
+
+- **Debate**
+
+  - What is the best plotting library in R? Should I learn base R or tidyverse first?
+---
+
+class: inverse, center, middle
+
+# Reproducible examples and `reprex`
+
+---
+
+background-image: url(https://tenor.com/view/late-night-seth-lnsm-lnsm-gifs-seth-meyers-gif-9705583.gif)
+background-size: contain
+
+---
+class: middle, center
+
+# Reproducible
+
+# Minimal
+
+# Verifiable
+
+---
+
+
+# **reproducible**
+
+  - You need to capture everything
+
+    - `library()` calls at the top
+    - all necessary objects. 
+
+---
+
+# **minimal**
+
+  - Strip away everything that is not directly related to your problem. 
+  
+  - Small, simple data objects (usually much smaller than what you're actually working with).
+  
+  - Preferably built-in, familiar data sets, e.g. `mtcars` or  [others](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
+  
+  - use [datapasta]([https://github.com/milesmcbain/datapasta) when working with your own data, or data outside of R
+    - `datapasta` demo
+  
+---
+
+# **verifiable**
+
+  - Actually reproduces the problem!
+
+- Explain steps (using comments or rmarkdown)
+
+- Include error messages, and possibly output of `sessionInfo()`
+
+- Include what you've tried to fix it
+
+---
+
+class: inverse, center, middle
+  
+# Can be a lot of effort, but often the process of coming up with a good **repr**oducible **ex**ample (**reprex**) allows you to identify (and possibly solve) the problem
+
+---
+
+# The `reprex` package
+
+
+```r
+install.packages("reprex")
+
+# Included as part of the tidyverse
+install.packages("tidyverse")
+```
+
+The goal of a reprex is to package your problematic code in such a way that other people can run it and feel your pain. Then, hopefully, they can provide a solution and put you out of your misery.
+
+---
+
+# Basic `reprex` steps
+
+- write some R code
+- copy it
+- run `reprex()` (or use RStudio addin)
+- check locally
+- paste into target
+
+---
+
+# `reprex()` demo
+
+---
+
+# All things `reprex`
+
+Jenny Bryan's `reprex` RStudio workshop:
+
+- [Video](https://rstudio.com/resources/webinars/help-me-help-you-creating-reproducible-examples/)
+- [Slides](https://speakerdeck.com/jennybc/reprex-reproducible-examples-with-r)
+
+---
+class: inverse, middle, center
+
+# Where to ask?
+
+---
+## Where to ask **problem** questions
+
+- For bugs/issues related to a particular package, file an issue (usually GitHub)
+
+  - CRAN package page, `BugReports` url (e.g. [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html))
+  - Bioconductor page, `BugReports` url (e.g. [treeio](https://bioconductor.org/packages/release/bioc/html/treeio.html))
+  
+- [StackOverflow](https://stackoverflow.com) (using tags, e.g. [r], [tidyverse], [ropensci])
+
+- Community forums:
+
+  - [RStudio community](https://community.rstudio.com) for questions relating to RStudio IDE, tidyverse, package development and plenty more
+  
+  - For questions related to open science, reproducibility, documenting data, extracting data out of something (a PDF! a PNG!), package development, rOpenSci’s [discussion forum](https://discuss.ropensci.org) might be the right venue.
+
+---
+
+# Where to ask **question** or **debate** questions
+  
+- [RStudio community](https://community.rstudio.com) or [rOpenSci’s discussion forum](https://discuss.ropensci.org) (see above),
+
+- [R epidemics consortium](https://www.repidemicsconsortium.org/forum/)
+
+- [R for Data Science](https://www.rfordatasci.com) online community, [Slack](https://rforsatascience.slack.com) and [twitter](https://twitter.com/R4DScommunity). 
+  - Learners/mentors/community/office hours. 
+
+- R [mailing lists](https://www.r-project.org/mail.html): 5 main and 22 special interest
+
+- Google groups: [ggplot2](https://groups.google.com/forum/#!forum/ggplot2) and [manipulatr](https://groups.google.com/forum/#!forum/manipulatr) for tidyverse data manipulation queries
+
+- Twitter [\#rstats](https://twitter.com/hashtag/rstats)
+  
+---
+
+# Twitter, R and #rstats
+
+- [\#rstats](https://twitter.com/hashtag/rstats) twitter is a friendly place
+
+Good for:
+
+- Easily/quickly answered questions (e.g. is there a package to do foo?)
+- Debate questions 
+
+Not good for:
+
+- Tagging package maintainers
+- Too much code
+- Problem questions (unless sharing a link to the question elsewhere)
+
+---
+
+class: center, middle
+
+# [dplyrExtras example](https://github.com/skranz/dplyrExtras/issues/9)
+
+---
+
+class: center, middle
+
+# [vignette example](https://github.com/rstudio/rmarkdown/issues/1119)
+
+
+---
+
+# Helping others
+
+- Answer questions on StackOverflow [[r]](https://stackoverflow.com/questions/tagged/r) and twitter ([#rstats](https://twitter.com/hashtag/rstats))
+
+- File issues
+
+---
+
+class: inverse, center, middle
+
+# FURTHER RESOURCES
+
+---
+
+# Resources 1: Asking questions
+
+- StackOverflow guides and question on what makes a good question
+  
+  [https://stackoverflow.com/help/mcve](https://stackoverflow.com/help/mcve)
+  
+  [https://stackoverflow.com/help/how-to-ask](https://stackoverflow.com/help/how-to-ask)
+  
+  [https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example](https://stackoverflow.com/help/mcve)
+
+
+---
+
+# Resources 2: `reprex`
+
+- reprex package on tidyverse site
+
+  [http://reprex.tidyverse.org](http://reprex.tidyverse.org)
+
+- reprex package on GitHub
+
+  [https://github.com/tidyverse/reprex](https://github.com/tidyverse/reprex)
+  
+- Jenny Bryan webinar
+
+  [https://rstudio.com/resources/webinars/help-me-help-you-creating-reproducible-examples/](https://rstudio.com/resources/webinars/help-me-help-you-creating-reproducible-examples/)
+  
+- Excellent blogpost (with gifs!)
+
+  [http://www.njtierney.com/post/2017/01/11/magic-reprex](http://www.njtierney.com/post/2017/01/11/magic-reprex/)
+
+---
+
+# Resources 3: `tidyverse` help 
+- tidyverse guide to getting help
+
+  [http://www.tidyverse.org/help](http://www.tidyverse.org/help/)
+  
+- tidyverse guide to contributing
+
+  [http://www.tidyverse.org/contribute](http://www.tidyverse.org/contribute)
+  
+---
+
+# Resources 4: Blogposts
+      
+- Common errors in R
+
+  [https://github.com/noamross/zero-dependency-problems/blob/master/misc/stack-overflow-common-r-errors.md](https://github.com/noamross/zero-dependency-problems/blob/master/misc/stack-overflow-common-r-errors.md)
+  
+  tl; dr: Most errors in R are due to looking for something that isn't there.
+  
+- Where to get help
+
+  [https://masalmon.eu/2018/07/22/wheretogethelp/](https://masalmon.eu/2018/07/22/wheretogethelp/)
+  
+---
+
+class: inverse, center, middle
+
+# Thank you!
+## Any questions?
+
+
+## I'd love to hear from you!
+[E.Kaye.1@warwick.ac.uk](mailto:E.Kaye.1@warwick.ac.uk)
+
+[@ellamkaye](https://twitter.com/ellamkaye)
+
+[ellakaye.rbind.io](https://ellakaye.rbind.io)
+
+[github.com/EllaKaye](https://github.com/ellakaye)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "solarized-dark",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

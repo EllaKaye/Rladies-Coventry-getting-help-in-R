@@ -1,3 +1,7 @@
 # Getting Help in R
 
-Materials for a talk given at R Ladies Coventry, October 29th, 2020. Meetup details [here](https://www.meetup.com/rladies-coventry/events/273429872/).
+Materials for a talk given at R Ladies Coventry, October 29th, 2020. 
+
+Meetup details [here](https://www.meetup.com/rladies-coventry/events/273429872/).
+
+Slides [here](https://ellakaye.github.io/Rladies-Coventry-getting-help-in-R/getting_help_in_R.html#1)

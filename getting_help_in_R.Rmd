@@ -6,20 +6,23 @@ date: "October 29th, 2020"
 output:
   xaringan::moon_reader:
     seal: false
-    css: xaringan-themer.css
+    css: [xaringan-themer.css, extra.css]
     lib_dir: libs
     nature:
-      highlightStyle: solarized-dark
+      highlightStyle: solarized-light
       highlightLines: true
       countIncrementalSlides: false
 ---
+
+<!-- layout: true -->
+<!-- <div class="my-footer"><span>bit.ly/LINK • @ellamkaye</span></div>  -->
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-```{r xaringan-themer, include = FALSE, warning = FALSE}
+```{r xaringan-themer-solarized, include = FALSE, warning = FALSE, eval = FALSE}
 library(xaringanthemer)
 style_solarized_light(
   code_font_google = google_font("Fira Code")
@@ -32,11 +35,16 @@ library(xaringanExtra)
 use_xaringan_extra(c("tile_view", "clipboard", "extra_css"))
 ```
 
+<!-- layout: true -->
+<!-- <div class="my-footer"><span>bit.ly/LINK • @nj_tierney</span></div>  -->
+
+---
+
 class: inverse, left, middle
 
 # GETTING HELP IN R
 
-Ella Kaye | Rladies Coventry | October 29th, 2020
+.large[Ella Kaye | Rladies Coventry | October 29th, 2020]
 
 ---
 
@@ -264,7 +272,7 @@ class: middle, center
 ---
 
 
-# **reproducible**
+# reproducible
 
   - You need to capture everything
 
@@ -273,7 +281,7 @@ class: middle, center
 
 ---
 
-# **minimal**
+# minimal
 
   - Strip away everything that is not directly related to your problem. 
   
@@ -286,7 +294,7 @@ class: middle, center
   
 ---
 
-# **verifiable**
+# verifiable
 
   - Actually reproduces the problem!
 
@@ -484,17 +492,19 @@ class: inverse, center, middle
   
 ---
 
-class: inverse, left, middle
+class: left, middle
 
 # Thank you!
 ## Any questions?
 
 
 ## I'd love to hear from you!
-[E.Kaye.1@warwick.ac.uk](mailto:E.Kaye.1@warwick.ac.uk)
+.large[
+`r icon::fa_paper_plane()` [E.Kaye.1@warwick.ac.uk](mailto:E.Kaye.1@warwick.ac.uk)
 
-[@ellamkaye](https://twitter.com/ellamkaye)
+`r icon::fa_twitter()` [@ellamkaye](https://twitter.com/ellamkaye)
 
-[ellakaye.rbind.io](https://ellakaye.rbind.io)
+`r icon::fa_laptop()` [ellakaye.rbind.io](https://ellakaye.rbind.io)
 
-[github.com/EllaKaye](https://github.com/ellakaye)
+`r icon::fa_github()` [github.com/EllaKaye](https://github.com/ellakaye)
+]

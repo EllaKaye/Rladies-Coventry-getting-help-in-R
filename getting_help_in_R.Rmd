@@ -44,7 +44,7 @@ class: inverse, left, middle
 
 # GETTING HELP IN R
 
-.large[Ella Kaye | Rladies Coventry | October 29th, 2020]
+.bit-large[Ella Kaye | Rladies Coventry | October 29th, 2020]
 
 ---
 
@@ -306,7 +306,7 @@ class: middle, center
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, middle, special-bold
   
 # Can be a lot of effort, but often the process of coming up with a good **repr**oducible **ex**ample (**reprex**) allows you to identify (and possibly solve) the problem
 
@@ -369,7 +369,7 @@ class: inverse, middle, center
 
 ---
 
-# Where to ask **question** or **debate** questions
+## Where to ask **question** or **debate** questions
   
 - [RStudio community](https://community.rstudio.com) or [rOpenSci’s discussion forum](https://discuss.ropensci.org) (see above),
 
@@ -492,14 +492,15 @@ class: inverse, center, middle
   
 ---
 
-class: left, middle
+class: left, end
 
-# Thank you!
+.right[# Thank you!
 ## Any questions?
+### <span style="color:#FDFCFA">Blank line</span>]
 
-
-## I'd love to hear from you!
 .large[
+`r icon::fa('link')` [bit.ly/emk-getting-help-R](http://bit.ly/emk-getting-help-R)
+
 `r icon::fa_paper_plane()` [E.Kaye.1@warwick.ac.uk](mailto:E.Kaye.1@warwick.ac.uk)
 
 `r icon::fa_twitter()` [@ellamkaye](https://twitter.com/ellamkaye)

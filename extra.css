@@ -9,6 +9,9 @@
 .large {
   font-size: 150%;
 }
+.bit-large {
+  font-size: 160%;
+}
 .vlarge {
   font-size: 200%;
 }
@@ -63,56 +66,14 @@ div.my-footer span {
   bottom: 10px;
 }
 
-
-/* Extra CSS */
-.red {
-  color: red;
-}
-.small {
-  font-size: 80%;
-}
-.tiny {
-  font-size: 60%;
-}
-.medium {
-  font-size: 120%;
-}
-.large {
-  font-size: 150%;
-}
-.vlarge {
-  font-size: 200%;
-}
-.huge {
-  font-size: 250%;
-}
-.vhuge {
-  font-size: 350%;
-}
-.full-width {
-  display: flex;
-  width: 100%;
-  flex: 1 1 auto;
-}
-.left-code {
-  width: 38%;
-  height: 92%;
-  float: left;
-}
-.right-plot {
-  width: 60%;
-  float: right;
-  padding-left: 1%;
-}
-.pull-left {
-  float: left;
-  width: 47%;
-}
-.pull-right {
-  float: right;
-  width: 47%;
-}
-
 .inverse .remark-slide-number {
   color: #0079D1
+}
+
+.end .remark-slide-number{
+  display: none;
+}
+
+.special-bold strong {
+  color: #002B36
 }

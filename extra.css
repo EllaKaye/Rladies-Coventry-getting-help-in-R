@@ -74,6 +74,10 @@ div.my-footer span {
   display: none;
 }
 
-.special-bold strong {
+.inverse strong {
+  color: #002B36
+}
+
+.inverse code {
   color: #002B36
 }

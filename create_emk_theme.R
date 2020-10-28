@@ -19,7 +19,7 @@ style_xaringan(
   inverse_text_color = emk_colours$pale1,
   text_color = emk_colours$dark1,
   #text_bold_color = emk_colours$dark1,
-  code_inline_color = emk_colours$dark1,
+  code_inline_color = emk_colours$grey,
   footnote_color = emk_colours$pink,
   text_slide_number_color = emk_colours$grey
 )

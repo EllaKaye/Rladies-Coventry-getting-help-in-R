@@ -2,7 +2,7 @@ library(xaringanthemer)
 
 emk_colours <- list(
   pink = "#D40067",
-  blue = "#0079D1",
+  blue = "#006CB9",
   pale1 = "#FDFCFA",
   pale2 = "#FDFBF0",
   dark1 = "#002B36",

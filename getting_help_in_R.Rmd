@@ -490,7 +490,18 @@ class: inverse, center, middle
 
   [https://masalmon.eu/2018/07/22/wheretogethelp/](https://masalmon.eu/2018/07/22/wheretogethelp/)
   
+---
 
+# Resources 5: Slides
+
+- Slides made with [xaringan](https://github.com/yihui/xaringan)
+
+- Slides styled with [xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+- Fonts from [Google Fonts](https://fonts.google.com):
+  - Header font in 'Cabin'
+  - Body text font is 'Montserrat'
+  - Code font is 'Fira Code'
 
 ---
 

@@ -499,7 +499,7 @@ class: left, end
 ### <span style="color:#FDFCFA">Blank line</span>]
 
 .large[
-`r icon::fa('link')` [bit.ly/emk-getting-help-R](http://bit.ly/emk-getting-help-R)
+`r icon::fa('link')` [bit.ly/emk-getting-help-in-R](http://bit.ly/emk-getting-help-in-R)
 
 `r icon::fa_paper_plane()` [E.Kaye.1@warwick.ac.uk](mailto:E.Kaye.1@warwick.ac.uk)
 

@@ -148,7 +148,7 @@ class: center, middle, inverse
 
 
 background-image: url(images/google-help-tweet.png)
-background-size: contain
+background-size: 75% 75%
 
 ---
 
@@ -159,7 +159,7 @@ background-size: contain
 ---
 
 background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png)
-background-size: contain
+background-size: 90%
 
 
 ---
@@ -191,7 +191,7 @@ background-size: contain
 ---
 
 background-image: url(https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)
-background-size: contain
+background-size: 75% 75%
 
 
 
@@ -258,7 +258,7 @@ class: inverse, center, middle
 ---
 
 background-image: url(https://tenor.com/view/late-night-seth-lnsm-lnsm-gifs-seth-meyers-gif-9705583.gif)
-background-size: contain
+background-size: 65%
 
 ---
 class: middle, center
@@ -490,6 +490,8 @@ class: inverse, center, middle
 
   [https://masalmon.eu/2018/07/22/wheretogethelp/](https://masalmon.eu/2018/07/22/wheretogethelp/)
   
+
+
 ---
 
 class: left, end

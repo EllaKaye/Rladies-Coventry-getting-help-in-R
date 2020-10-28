@@ -67,7 +67,7 @@ div.my-footer span {
 }
 
 .inverse .remark-slide-number {
-  color: #0079D1
+  display: none;
 }
 
 .end .remark-slide-number{

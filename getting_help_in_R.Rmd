@@ -1,5 +1,5 @@
 ---
-title: "Getting help with R"
+title: "Getting help in R"
 subtitle: "R Ladies Coventry"
 author: "Ella Kaye"
 date: "October 29th, 2020"

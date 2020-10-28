@@ -46,7 +46,7 @@ class: inverse, left, middle
 
 # GETTING HELP IN R
 
-.bit-large[Ella Kaye | Rladies Coventry | October 29th, 2020]
+.larger[Ella Kaye | Rladies Coventry | October 29th, 2020]
 
 ---
 

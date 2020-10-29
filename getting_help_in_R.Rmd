@@ -533,7 +533,7 @@ class: inverse, center, middle
   - Body text font is **Montserrat**
   - Code font is **Fira Code**
 
-- Template available: [ellakaye/talk-template](https://github.com/EllaKaye/talk-template)
+- Template available: [ellakaye/emk-talks](https://github.com/EllaKaye/emk-talks)
 ---
 
 class: left, end

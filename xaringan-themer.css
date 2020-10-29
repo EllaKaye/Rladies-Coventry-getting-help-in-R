@@ -46,6 +46,7 @@
   --header-color: #D40067;
   --background-color: #FDFCFA;
   --link-color: #0079D1;
+  --text-bold-color: #D40067;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #FDFCFA;
   --inverse-background-color: #0079D1;
@@ -54,6 +55,11 @@
   --title-slide-text-color: #FDFCFA;
   --header-background-color: #D40067;
   --header-background-text-color: #FDFCFA;
+  --pink: #D40067;
+  --blue: #0079D1;
+  --pale: #FDFCFA;
+  --dark: #002B36;
+  --grey: #586E75;
 }
 
 html {
@@ -101,6 +107,7 @@ h1, h2, h3 {
   opacity: 1;
   font-size: 0.9em;
 }
+strong { color: var(--text-bold-color); }
 a, a > code {
   color: var(--link-color);
   text-decoration: none;
@@ -229,4 +236,34 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   }
 }
 
+.pink {
+  color: var(--pink);
+}
+.bg-pink {
+  background-color: var(--pink);
+}
+.blue {
+  color: var(--blue);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.pale {
+  color: var(--pale);
+}
+.bg-pale {
+  background-color: var(--pale);
+}
+.dark {
+  color: var(--dark);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+.grey {
+  color: var(--grey);
+}
+.bg-grey {
+  background-color: var(--grey);
+}
 

@@ -104,6 +104,9 @@ arg(function_name)
 
 # see an example
 example(function_name)
+
+# see the source code
+function_name
 ```
 
 ---
@@ -116,10 +119,6 @@ help.search("function_name") # note quotation marks
 
 # for when you can't quite remember the function name
 ??something_like_function_name
-
-# use auto-completion in RStudio to see what functions 
-# are in a package
-?package::
 ```
 
 ---
@@ -136,6 +135,9 @@ help(package = "package_name")
 browseVignettes()
 browseVignettes("package_name")
 
+# use auto-completion in RStudio to see what functions 
+# are in a package
+?package::
 ```
 
 `dplyr` demo
@@ -188,30 +190,19 @@ background-size: contain
 
   - Check a few answers, read comments
   - Reputation (e.g. number of up-votes) can be a good guide
-    
+
+---
+
+# Issues on GitHub page
+
+- Check if it's a known problem awaiting a fix
+
+- commenting means you'll be notified of a fix
 
 ---
 
 background-image: url(https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)
 background-size: 75% 75%
-
-
-
----
-
-# Digging deeper
-
-- Issues on GitHub page
-
-  - Check if it's a known problem awaiting a fix
-  - commenting means you'll be notified of a fix
-  
-- Source code
-  
-  - Search for the package on GitHub
-  - Download package source from CRAN (.tar.gz file)
-  - `function_name` to see source code (no brackets)
-  - Can you identify exactly what's causing the problem?
 
 ---
 
@@ -405,29 +396,66 @@ Not good for:
 
 ---
 
-class: center, middle
+background-image: url(https://media.giphy.com/media/l3q2Lz5yuEFUXX3IQ/giphy.gif)
+background-size: 65%
 
-# [dplyrExtras example](https://github.com/skranz/dplyrExtras/issues/9)
+---
+
+class: inverse, center, middle
+
+# Don't be shy or embarrassed to ask questions!
+
+# It's OK not to know something!
+
+# It's OK to get something wrong!
 
 ---
 
 class: center, middle
 
-# [Fonts example](https://stackoverflow.com/questions/63357522/purchased-font-in-hugo-academic-not-showing-on-all-modern-browsers-computers)
+# [recipes example](https://github.com/tidymodels/recipes/issues/542)
+
+---
+
+class: center, middle
+
+# [vignettes example](https://github.com/rstudio/rmarkdown/issues/1119)
+
+---
+
+class: center, middle
+
+# [fonts example](https://stackoverflow.com/questions/63357522/purchased-font-in-hugo-academic-not-showing-on-all-modern-browsers-computers)
 
 
 ---
 
 # Helping others
 
-- Answer questions on StackOverflow [[r]](https://stackoverflow.com/questions/tagged/r) and twitter ([#rstats](https://twitter.com/hashtag/rstats))
+.pull-left[
+- **Answer questions**
 
-- File issues on GitHub
+  - e.g. StackOverflow [[r]](https://stackoverflow.com/questions/tagged/r) and twitter ([#rstats](https://twitter.com/hashtag/rstats))
+  
+- **Generate content**
 
-- Engage in community forums
+  - blog posts
+  - Share code (e.g. [#TidyTuesday](https://twitter.com/hashtag/tidytuesday), [#FunctionFriday](https://twitter.com/hashtag/functionfriday), [gists](https://gist.github.com))
+  
+- **File issues** on GitHub
+]
 
-- Become a mentor in the R for Data Science [community](https://www.rfordatasci.com).
+.pull-right[
+- **Engage** in community forums
 
+  - Become a mentor in the R for Data Science [community](https://www.rfordatasci.com)
+  
+- **Contribute** to open source packages ([however small!](https://github.com/tidyverse/modelr/pull/55))
+
+- **Document** code
+
+  - package help pages, vignettes
+]
 ---
 
 class: inverse, center, middle
@@ -501,9 +529,9 @@ class: inverse, center, middle
 - Slides styled with [xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
 
 - Fonts from [Google Fonts](https://fonts.google.com):
-  - Header font in 'Cabin'
-  - Body text font is 'Montserrat'
-  - Code font is 'Fira Code'
+  - Header font in **Cabin**
+  - Body text font is **Montserrat**
+  - Code font is **Fira Code**
 
 ---
 

@@ -13,11 +13,11 @@ This session will be led by Ella Kaye - an R enthusiast and statistics PhD resea
 
 ## Take home messages 
 
-1. When faced with a question/problem, have a good look for an answer in R itself and/or online
-1. Don't be shy to ask questions! 
-1. Write reproducible examples
-1. Give thought to where you ask/post your question
-1. Give back by helping others
+- When faced with a question/problem, have a good look for an answer in R itself and/or online
+- Don't be shy to ask questions! 
+- Write reproducible examples
+- Give thought to where you ask/post your question
+- Give back by helping others
 
 ## Slides
 

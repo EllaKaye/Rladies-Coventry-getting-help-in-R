@@ -29,17 +29,29 @@ template <- "${EXCLAMATION} - your reprex is ${adjective}!"
 praise(template)
 
 #### Example 3: missing package
+# copy
 template <- "${EXCLAMATION} - your reprex is ${adjective}!"
 praise(template)
+
+# run
+reprex()
 
 #### Example 4: missing object
+# copy
 library(praise)
 praise(template)
 
+# run
+reprex()
+
 ### Example 5: All together now!
+# copy
 library(praise)
 template <- "${EXCLAMATION} - your reprex is ${adjective}!"
 praise(template)
+
+# run
+reprex()
 
 ### Example 6: plots! images!
 # copy
@@ -50,7 +62,7 @@ ggplot(mpg, aes(class)) +
 # run
 reprex()
 
-# paste
+# paste in GitHub issue
 
 
 #### Example 6: in the function, GitHub output (default)

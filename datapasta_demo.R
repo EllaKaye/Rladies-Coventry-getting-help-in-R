@@ -15,9 +15,14 @@ small_data
 # paste it using `dpasta` from `datapasta package`
 dpasta(small_data)
 
-# assign in to `example_data` object
+                  
+# assign in to `toy_data` object
 
 # look again
-example_data
+toy_data
 
-# copy and paste in questions
+# copy and paste into questions
+# will return to this in reprex demo
+
+
+

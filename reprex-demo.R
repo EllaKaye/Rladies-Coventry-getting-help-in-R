@@ -64,20 +64,40 @@ reprex()
 
 # paste in GitHub issue
 
+### Example 7: using data pasta to share locally generated data
 
-#### Example 6: in the function, GitHub output (default)
+library(Admissions) # a private, local package
+library(dplyr)
+library(datapasta)
+small_data <- MM_BY_STU %>%
+  select(STU_ID, YEAR_MARK, DEPT_CLASS) %>%
+  mutate(FLAGGED = YEAR_MARK < 60) %>%
+  mutate(STU_ID = row_number()) %>%
+  head(10)
+
+# assign to toy_data 
+dpasta(small_data)
+
+library(dplyr)
+toy_data %>%
+  summarise(MEAN_YEAR_MARK = mean(YEAR_MARK))
+
+# run
+reprex()
+
+#### Example 8: in the function, GitHub output (default)
 
 reprex(rbinom(3, size = 10, prob = 0.5))
 
 # paste
 
-#### Example 7: in the function, StackOverflow output
+#### Example 9: in the function, StackOverflow output
 
 reprex(rbinom(3, size = 10, prob = 0.5), venue = "so")
 
 # paste
 
-#### Example 8: multi-line
+#### Example 10: multi-line
 
 reprex({
   x <- 1:4
@@ -87,7 +107,7 @@ reprex({
 
 # paste
 
-#### Example 9: comments and saving to a file
+#### Example 11: comments and saving to a file
 
 demo_code <- c(
   "## a regular comment",
@@ -108,7 +128,7 @@ cat(demo_code, sep = "\n")
 # open up md file
 
 
-#### Example 10: markdown
+#### Example 12: markdown
 
 reprex({
   #' # A Big Heading
@@ -120,7 +140,7 @@ reprex({
 })
 
 
-#### Example 9: with sessionInfo
+#### Example 13: with sessionInfo
 
 library(tidyverse)
 library(palmerpenguins)

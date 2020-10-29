@@ -142,6 +142,8 @@ browseVignettes("package_name")
 
 `dplyr` demo
 
+RStudio Help home demo
+
 ---
 
 class: center, middle, inverse

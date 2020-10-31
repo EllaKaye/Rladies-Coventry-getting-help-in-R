@@ -35,7 +35,7 @@ meta() %>%
   meta_name("github-repo" = "ellakaye/Rladies-Coventry-getting-help-in-R") %>% 
   meta_social(
     title = "Getting Help in R",
-    url = "https://ellakaye.rbind.io/talk/2020-10-20-rladies-coventry-getting-help/",
+    url = "https://ellakaye.github.io/Rladies-Coventry-getting-help-in-R/getting_help_in_R.html#1",
     image = "https://github.com/EllaKaye/Rladies-Coventry-getting-help-in-R/blob/main/logo.svg",
     image_alt = "Ella Kaye logo",
     og_type = "website",

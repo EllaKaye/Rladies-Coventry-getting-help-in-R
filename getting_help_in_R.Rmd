@@ -36,7 +36,7 @@ meta() %>%
   meta_social(
     title = "Getting Help in R",
     url = "https://ellakaye.github.io/Rladies-Coventry-getting-help-in-R/getting_help_in_R.html#1",
-    image = "https://github.com/EllaKaye/Rladies-Coventry-getting-help-in-R/blob/main/help-cover-slide.png",
+    image = "https://ellakaye.rbind.io/talk/2020-10-20-rladies-coventry-getting-help/cover-slide.png",
     image_alt = "Ella Kaye logo",
     og_type = "website",
     og_author = "Ella Kaye",

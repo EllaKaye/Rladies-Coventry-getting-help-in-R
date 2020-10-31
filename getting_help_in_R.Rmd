@@ -24,13 +24,33 @@ options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
+
+```{r meta, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "A guide to getting help in R, both searching for answers and how and where to ask good questions.",
+    generator = "xaringan and remark.js"
+  ) %>% 
+  meta_name("github-repo" = "ellakaye/Rladies-Coventry-getting-help-in-R") %>% 
+  meta_social(
+    title = "Getting Help in R",
+    url = "https://ellakaye.rbind.io/talk/2020-10-20-rladies-coventry-getting-help/",
+    image = "https://github.com/EllaKaye/Rladies-Coventry-getting-help-in-R/blob/main/logo.svg",
+    image_alt = "Ella Kaye logo",
+    og_type = "website",
+    og_author = "Ella Kaye",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@ellamkaye"
+  )
+```
+
 ```{r xaringan-themer-solarized, include = FALSE, warning = FALSE, eval = FALSE}
 library(xaringanthemer)
 style_solarized_light(
   code_font_google = google_font("Fira Code")
 )
 ```
-
 
 ```{r xariganExtra, echo = FALSE, waring = FALSE}
 library(xaringanExtra)

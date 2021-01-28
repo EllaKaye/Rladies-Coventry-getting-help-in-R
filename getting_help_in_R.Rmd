@@ -66,7 +66,7 @@ class: inverse, left, middle
 
 # GETTING HELP IN R
 
-.larger[Ella Kaye | Rladies Coventry | October 29th, 2020]
+.larger[Ella Kaye | bseeR | January 28th, 2021]
 
 ---
 
@@ -179,7 +179,19 @@ background-size: 75% 75%
 ---
 
 class: center, bottom
-background-image: url(images/rseek-tidy.png)
+background-image: url(images/google-broom.png)
+background-size: contain
+
+---
+
+class: center, bottom
+background-image: url(images/google-broom-r.png)
+background-size: contain
+
+---
+
+class: center, bottom
+background-image: url(images/rseek-broom.png)
 background-size: contain
 
 ---
@@ -404,6 +416,7 @@ class: inverse, middle, center
 # Twitter, R and #rstats
 
 - [\#rstats](https://twitter.com/hashtag/rstats) twitter is a friendly place
+- Twitter for rstats book: [https://www.t4rstats.com](https://www.t4rstats.com)
 
 Good for:
 

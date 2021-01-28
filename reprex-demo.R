@@ -79,6 +79,7 @@ small_data <- MM_BY_STU %>%
 dpasta(small_data)
 
 library(dplyr)
+
 toy_data %>%
   summarise(MEAN_YEAR_MARK = mean(YEAR_MARK))
 

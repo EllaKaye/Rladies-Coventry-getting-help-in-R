@@ -5,6 +5,8 @@ The inaugural talk for R Ladies Coventry, October 29th, 2020.
 
 Meetup details [here](https://www.meetup.com/rladies-coventry/events/273429872/).
 
+The talk was then very slightly update and given again at [bseeR](https://www.ellenwebborn.com/rusergroup/) (the UCL R User Group), January 28th, 2021.
+
 ## Abstract
 
 This session will be led by Ella Kaye - an R enthusiast and statistics PhD researcher at the University of Warwick. In the session, Ella will talk us through different ways to get help when you get stuck on a problem in R. We’ll cover how and where to look for answers and how to ask and post good questions that make it easy for others to help you, including a demo of the excellent `reprex` and `datapasta` packages. So whether you’re an R novice or more experienced R user, hopefully there’ll be some useful tips for you!
